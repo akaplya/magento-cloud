@@ -15,10 +15,41 @@
         "repo": {
             "type": "composer",
             "url": "https://repo.magento.com"
+        },
+        "catalog-saas": {
+            "type": "git",
+            "url": "git@github.com:akaplya/sales-channels-magento-module.git"
         }
     },
     "require": {
-        "magento/magento-cloud-metapackage": ">=2.3.2 <2.3.3"
+        "magento/magento-cloud-metapackage": ">=2.3.0 <2.3.3",
+        "magento/saas-catalog-metapackage": "dev-test",
+        "magento/module-bundle-sample-data": "*",
+        "magento/module-catalog-rule-sample-data": "*",
+        "magento/module-catalog-sample-data": "*",
+        "magento/module-cms-sample-data": "*",
+        "magento/module-configurable-sample-data": "*",
+        "magento/module-customer-sample-data": "*",
+        "magento/module-downloadable-sample-data": "*",
+        "magento/module-grouped-product-sample-data": "*",
+        "magento/module-msrp-sample-data": "*",
+        "magento/module-offline-shipping-sample-data": "*",
+        "magento/module-product-links-sample-data": "*",
+        "magento/module-review-sample-data": "*",
+        "magento/module-sales-rule-sample-data": "*",
+        "magento/module-sales-sample-data": "*",
+        "magento/module-sample-data": "*",
+        "magento/module-swatches-sample-data": "*",
+        "magento/module-tax-sample-data": "*",
+        "magento/module-theme-sample-data": "*",
+        "magento/module-widget-sample-data": "*",
+        "magento/module-wishlist-sample-data": "*",
+        "magento/sample-data-media": "*",
+        "magento/module-customer-balance-sample-data": "*",
+        "magento/module-gift-card-sample-data": "*",
+        "magento/module-gift-registry-sample-data": "*",
+        "magento/module-multiple-wishlist-sample-data": "*",
+        "magento/module-target-rule-sample-data": "*"
     },
     "suggest": {
         "ext-pcntl": "Need for run processes in parallel mode"
@@ -56,7 +87,7 @@
             "Magento\\TestFramework\\Utility\\": "dev/tests/static/framework/Magento/TestFramework/Utility/"
         }
     },
-    "minimum-stability": "alpha",
+    "minimum-stability": "dev",
     "prefer-stable": true,
     "extra": {
         "component_paths": {
